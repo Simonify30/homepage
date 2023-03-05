@@ -1,0 +1,976 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(36, 100%, 99%);
+}
+
+
+.more{
+    padding: 10px 20px;
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 3px;
+
+}
+
+.more:hover{
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+}
+
+img{
+    cursor: pointer;
+}
+
+.dropdown a:hover, h5:hover{
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+
+h3:hover{
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+
+
+
+@media (width <= 375px) {
+    body{
+        padding: 8px;
+    
+    }
+
+    .mobileImg{
+        height: 280px;
+    }
+
+    .desktopImg{
+        display: none;
+    }
+
+    header{
+        padding-bottom: 40px;
+    }
+
+    .logo{
+        float: left;
+    }
+
+    .rightMenu{
+        float: right;
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown{
+        position: absolute;
+        background-color: hsl(36, 100%, 99%);
+        z-index: 1;
+        padding: 15px;
+        right: 0px;
+        top: 0;
+        height: 400px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 25px;
+        visibility: hidden;
+    }
+
+    .dropdown a{
+        text-decoration: none;
+        color: hsl(240, 100%, 5%);
+    }
+
+    .dropdown a:hover{
+        background-color: black;
+        color: hsl(36, 100%, 99%);
+        padding: 5px 10px;
+    }
+
+    .cancel{
+        position: absolute;
+        top: 0;
+        align-self: end;
+        justify-self: start;
+        
+        
+    }
+
+    .about{
+        padding: 60px 0;
+    }
+    
+    p{
+        font-size: 15px;
+        font-weight: 100;
+        line-height: 23px;
+    }
+
+    .new{
+        background-color: hsl(240, 100%, 5%);
+        color: hsl(36, 100%, 99%);
+        padding: 15px;
+    
+    }
+
+    .new p, sub p{
+        color: hsl(236, 13%, 42%);
+    }
+
+    h2{
+        color: hsl(35, 77%, 62%);
+        margin: 0;
+    }
+
+    h3{
+        font-weight: 1200;
+        font-size: 24px;
+        padding-bottom: 9px;
+
+    }
+
+    section img{
+        cursor: pointer;
+    }
+    
+    h1{
+        font-weight: bold;
+        font-size: 50px;
+    
+    }
+
+    .product{
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    sub{
+        display: flex;
+        gap: 20px;
+    
+    }
+
+    .proimg{
+        height: 100px;
+    }
+
+    h4{
+        font-size: 25px;
+        padding-bottom: 5px;
+        color: hsl(233, 8%, 79%);
+    }
+
+    h5{
+        font-size: 19px;
+        padding-bottom: 5px;
+
+    }
+    .readMore{
+        margin-top: 20px;
+        
+    }
+
+    .product{
+        margin-bottom: 30px;
+    }
+}
+
+
+
+@media (width <= 350px) {
+
+    .mobileImg{
+        height: 260px;
+    }
+}
+
+@media (width <= 328px) {
+
+    .mobileImg{
+        height: 250px;
+    }
+
+    .proimg{
+        height: 120px;
+    }
+}
+
+@media (width <= 314px) {
+
+    .mobileImg{
+        height: 240px;
+    }
+
+    .proimg{
+        height: 140px;
+    }
+}
+
+@media (width <= 300px) {
+
+    .mobileImg{
+        height: 230px;
+    }
+}
+
+@media (width <= 290px) {
+
+    .mobileImg{
+        height: 220px;
+    }
+
+    .proimg{
+        height: 160px;
+    }
+}
+
+@media (width <= 280px) {
+
+    .mobileImg{
+        height: 210px;
+    }
+
+    .proimg{
+        height: 180px;
+    }
+}
+
+@media (width <= 270px) {
+
+    .mobileImg{
+        height: 200px;
+    }
+}
+
+@media (width <= 256px) {
+
+    .mobileImg{
+        height: 190px;
+    }
+}
+
+@media (width <= 244px) {
+
+    .mobileImg{
+        height: 180px;
+    }
+}
+
+
+@media (width >= 376px) {
+    .mobileImg, .menu, .remove{
+        display: none;
+    }
+
+    .desktopImg{
+        display: block;
+        height: 65px;
+    }
+
+    .wrapper{
+        padding: 20px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .dropdown{
+        font-size: 10px;
+        word-spacing: 10px;
+    }
+    
+    a{
+        text-decoration: none;
+        color: hsl(240, 100%, 5%);
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+    }
+
+    .sidebar{
+        width: 55%;
+        float: left;
+        min-height: 100px;
+
+    }
+
+    .new{
+        width: 35%;
+        float: right;
+        min-height: 100px;
+        background-color: hsl(240, 100%, 5%);
+        padding: 5px;
+        color: hsl(36, 100%, 99%);
+    }
+
+    .about{
+        width: 100%;
+        padding: 0;
+    }
+
+    .topic{
+        margin-bottom: 5px;
+    }
+
+    .readMore{
+        margin-top: 0;
+        
+    }
+
+    .more{
+        padding: 3px 5px;
+        font-size: 5px;
+        letter-spacing: 1px;
+    
+    }
+
+    .version{
+        width: 45%;
+        min-height: 20px;
+        float: left;
+    }
+
+    .details{
+        width: 45%;
+        min-height: 20px;
+        float: right;
+
+    }
+
+    .clearfix::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .imgholder{
+        margin-bottom: 10px;
+    }
+   
+    .product{
+        width: 100%;
+        min-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    sub{
+        width: 30%;
+        min-height: 50px;
+        float: left;
+    }
+
+    .product sub:nth-child(2){
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .proimg{
+        height: 50px;
+    }
+
+    .plans{
+        width: 40%;
+        float: left;
+        min-height: 50px;
+    }
+
+    .productRev{
+        width: 50%;
+        min-height: 50px;
+        float: right;
+    }
+
+    h1{
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    p{
+        font-size: 5px;
+        line-height: 8px;
+    }
+
+    h2{
+        color: hsl(35, 77%, 62%);
+        margin: 0;
+        font-size: 10px;
+    }
+
+    h3{
+        font-size: 6px;
+        padding-bottom: 1px;
+        margin-bottom: 3px;
+    }
+
+    .new p{
+        font-size: 5px;
+        color: hsl(233, 8%, 79%);
+        line-height: 8px;
+
+    }
+
+    .mainDiv{
+        min-height: 150px;
+        margin: 0;
+    }
+
+    hr{
+        margin: 6px 0;
+    }
+
+    h4{
+        font-size: 10px;
+        padding-bottom: 3px;
+        color: hsl(233, 8%, 79%);
+    }
+
+    h5{
+        font-size: 5px;
+        padding-bottom: 2px;
+
+    }
+
+    .productRev p{
+        color: hsl(236, 13%, 42%);
+        line-height: 5px;
+    }
+}
+
+
+@media (width >= 400px) {
+    .desktopImg{
+        height: 70px;
+    }
+}
+
+@media (width >= 460px) {
+    .desktopImg{
+        height: 85px;
+    }
+
+    header{
+        margin-bottom: 20px;
+    }
+
+    h1{
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .plans{
+        width: 30%;
+        
+    }
+
+    .productRev{
+        width:60%;
+        
+    }
+
+    h2{
+        font-size: 13px;
+    }
+
+    h3{
+        font-size: 8px;
+    }
+    .new p{
+        font-size: 6px;
+        line-height: 10px;
+    }
+
+    p{
+        font-size: 6px;
+    }
+
+    hr{
+        margin: 7px 0;
+    }
+
+    .mainDiv{
+        margin-bottom: 15px;
+    }
+
+    h4{
+        font-size: 12px;
+    }
+
+    h5{
+        font-size: 6px;
+        margin-bottom: 3px;
+    }
+
+    .productRev p{
+        font-size: 5px;
+        line-height: 7px;
+    }
+}
+
+@media (width >= 526px) {
+    .mainDiv{
+        margin-bottom: 20px;
+        min-height: 170px;
+    }
+
+    .desktopImg{
+        height: 96px;
+    }
+
+    hr{
+        margin: 9px 0;
+    }
+
+    .new p{
+        font-size: 8px;
+    }
+
+    .more{
+        font-size: 7px;
+    
+    }
+    
+}
+
+@media (width >= 543px) {
+    p{
+        font-size: 8px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    .dropdown{
+        word-spacing: 20px;
+    }
+
+    .mainDiv{
+        min-height: 180px;
+    }
+
+    h2{
+        font-size: 17px;
+    }
+
+    h3{
+        font-size: 8px;
+    }
+
+    
+}
+
+@media (width >= 600px) {
+    .desktopImg{
+        height: 113px;
+    }
+
+    h1{
+        font-size: 22px;
+        line-height: 23px;
+    }
+    
+    p{
+        line-height: 10px;
+    }
+
+    h3{
+        font-size: 12px;
+
+    }
+
+    .new p{
+        font-size: 9px;
+    }
+
+    hr{
+        margin: 9px 0;
+    }
+
+    .mainDiv{
+        min-height: 200px;
+    }
+
+    .plans{
+        width: 30%;
+        
+    }
+
+    .productRev{
+        width:70%;
+        
+    }
+
+    h4{
+        font-size: 15px;
+    }
+
+    h5{
+        font-size: 9px;
+    }
+
+    .productRev p{
+        font-size: 7px;
+        line-height: 9px;
+    }
+}
+
+@media (width >= 662px) {
+    .desktopImg{
+        height: 124px;
+    }
+
+    hr{
+        margin: 11px 0;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    .new p{
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    p{
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .readMore{
+        margin-top: 4px;
+    }
+
+    .mainDiv{
+        min-height: 210px;
+    }
+
+    .dropdown{
+        word-spacing: 30px;
+    }
+}
+
+@media (width >= 708px) {
+    .desktopImg{
+        height: 135px;
+    }
+
+    .mainDiv{
+        min-height: 230px;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+    .topic{
+        margin-bottom: 10px;
+    }
+
+    h3{
+        font-size: 13px;
+    }
+
+    .new p{
+        font-size: 11px;
+    }
+
+    .new{
+        padding: 10px;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+}
+
+
+@media (width >= 720px) {
+
+    h1{
+        font-size: 27px;
+    }
+}
+
+@media (width >= 790px) {
+
+    h1{
+        font-size: 29px;
+    }
+
+    .desktopImg{
+        height: 150px;
+    }
+
+    .mainDiv{
+        height: 250px;
+    }
+
+    hr{
+        margin: 13px 0;
+    }
+
+    .topic{
+        margin-bottom: 12px;
+    }
+
+    h3{
+        font-size: 15px;
+    }
+
+    .new{
+        padding: 12px;
+    }
+
+    .plans{
+        width: 30%;
+    }
+
+    .productRev{
+        width: 60%;
+    }
+
+    .proimg{
+        height: 80px;
+    }
+
+    h5{
+        font-size: 12px;
+    }
+
+    h4{
+        font-size: 17px;
+    }
+
+    .productRev p{
+        font-size: 10px;
+        line-height: 12px;
+    }
+}
+
+@media (width >= 790px) {
+    .desktopImg{
+        height: 160px;
+    }
+
+    p{
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .mainDiv{
+        min-height: 270px;
+        margin-bottom: 30px;
+    }
+
+    .readMore{
+        margin-top: 10px;
+    }
+
+    hr{
+        margin: 20px 0;
+    }
+
+    .dropdown{
+        word-spacing: 50px;
+        font-size: 15px;
+    }
+
+    .more{
+        font-size: 10px;
+    }
+
+    h1{
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+}
+
+@media (width >= 900px) {
+    
+
+    .productRev{
+        width: 70%;
+    }
+
+}
+
+@media (width >= 1000px) {
+    
+
+    .desktopImg{
+        height: 190px;
+    }
+
+    .mainDiv{
+        height: 370px;
+    }
+
+    p{
+        font-size: 15px;
+        line-height: 16px;
+    }
+
+    .more{
+        font-size: 14px;
+
+    }
+
+    .topic{
+        margin-bottom: 25px;
+    }
+
+    h3{
+        font-size: 17px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    .new p{
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    h1{
+        line-height: 45px;
+        font-size: 40px;
+    }
+
+    .readMore{
+        margin-top: 30px;
+    }
+
+}
+
+@media (width >= 1100px) {
+    .desktopImg{
+        height: 200px;
+    }
+
+    .imgholder{
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (width >= 1150px) {
+    h1{
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+
+    h3{
+        font-size: 25px;
+        margin-bottom: 6px;
+    }
+
+    .proimg{
+        height: 100px;
+    }
+
+    h5{
+        font-size: 20px;
+    }
+
+    h4{
+        margin-bottom: 10px;
+    }
+
+    .productRev p{
+        font-size: 16px;
+        line-height: 19px;
+
+    }
+
+    .desktopImg{
+        height: 220px;
+    }
+
+    p{
+        font-size: 17px;
+        line-height: 22px;
+    
+    }
+
+    .version{
+        width: 40%;
+    }
+
+    .details{
+        width: 55%;
+    }
+
+    .more{
+        padding: 10px 15px;
+    }
+
+    .mainDiv{
+        height: 400px;
+    }
+
+    .dropdown{
+        font-size: 23px;
+    }
+
+}
+
+
+@media (width >= 1300px) {
+    .desktopImg{
+        height: 250px;
+    }
+
+    .mainDiv{
+        height: 430px;
+    }
+
+    .product{
+        margin-bottom: 40px;
+    }
+
+    hr{
+        margin: 28px 0;
+    }
+
+}
+
+@media (width >= 1430px) {
+    .desktopImg{
+        height: 280px;
+    }
+
+    .mainDiv{
+        height: 450px;
+    }
+
+    hr{
+        margin: 35px 0;
+    }
+
+}
